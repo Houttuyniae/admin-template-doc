@@ -12,7 +12,7 @@
 :::
 
 <common-code title="基本用法" description="基本按钮用法">
-  <!-- <highlight-code slot="codeText" >
+  <highlight-code slot="code" lang='vue'>
     <template>
       <div class="demo-button">
         <div>
@@ -25,6 +25,6 @@
         </div>
       </div>
     </template>
-  </highlight-code> -->
-  
+  </highlight-code>
+
 </common-code>

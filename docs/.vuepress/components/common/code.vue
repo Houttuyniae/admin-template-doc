@@ -11,9 +11,9 @@
     </div>
     <div v-if="isShow"
          class="code--segment">
-      <slot name="codeText"></slot>
+      <slot name="code"></slot>
     </div>
-    <div v-if="$slots.codeText"
+    <div v-if="$slots.code"
          class="code--button"
          @click="handleToggleShow">{{codeTextBtn}}</div>
   </div>

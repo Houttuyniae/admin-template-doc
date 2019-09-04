@@ -1,7 +1,8 @@
 import VueHighlightJS from 'vue-highlight.js'
+import 'highlight.js/styles/atom-one-dark.css'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import 'highlight.js/styles/rainbow.css'
+import vue from 'vue-highlight.js/lib/languages/vue'
 
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
@@ -10,6 +11,11 @@ export default ({
   siteData // 站点元数据
 }) => {
   // ...做一些其他的应用级别的优化
-  Vue.use(VueHighlightJS)
+  Vue.use(VueHighlightJS, {
+    // Register only languages that you want
+    languages: {
+      vue
+    }
+  })
   Vue.use(Element)
 }
