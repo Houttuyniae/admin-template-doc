@@ -34,5 +34,12 @@
     "emojis": true,
     "authorName": true,
     "authorEmail": true
+  },
+  "dependencies": {
+    "element-ui": "^2.12.0",
+    "highlight.js": "^9.15.10",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "vue-highlight.js": "^3.1.0"
   }
 }
