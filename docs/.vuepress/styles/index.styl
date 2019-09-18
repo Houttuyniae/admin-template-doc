@@ -1,3 +1,6 @@
+body
+  font-family: Avenir,Chinese Quote,PingFang SC,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;-webkit-font-smoothing: antialiased;
+
 {$contentClass}
   pre, pre[class*="language-"]
     line-height 1.4
@@ -26,16 +29,19 @@
     height: 18px;
     line-height: 18px;
 
-.api-container
+
+
+
+table[class*="api-container"]
+  display:table;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   border-width: 0;
   margin: 2em 0;
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
-  width: 100%;
+  width: 100% !important;
 
   th
     padding: 14px 16px;
@@ -45,10 +51,22 @@
     color: #5c6b77;
     font-weight: 500;
     background: rgba(0, 0, 0, 0.02);
+
   td:first-child
     font-weight: 500;
     width: 20%;
     color: #003a8c;
+
+
+  td:nth-child(3)
+    width: 22%;
+    font-size: 13px;
+    color: #c41d7f;
+    word-break: break-all;
+
+  td:last-child
+    width: 13%;
+    font-size: 13px;
   td
     padding: 14px 16px;
     border-width: 1px 0;
