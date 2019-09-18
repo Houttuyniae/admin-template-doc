@@ -1,0 +1,23 @@
+{
+  "name": "my",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "element-ui": "^2.12.0",
+    "highlight.js": "^9.15.10",
+    "vuepress": "^1.0.4"
+  },
+  "devDependencies": {
+    "markdown-it-container": "^2.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "debug": "node --nolazy --inspect-brk=9229 ./node_modules/vuepress/cli.js dev docs"
+  },
+  "author": "",
+  "license": "ISC"
+}
