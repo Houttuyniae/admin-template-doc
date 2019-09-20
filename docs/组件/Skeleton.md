@@ -183,6 +183,16 @@ export default {
 
 #### Skeleton
 
-|  参数   | 说明                   |  类型   | 默认值 |
-| :-----: | :--------------------- | :-----: | :----: |
-| confirm | 点击按钮时给予二次确认 | Boolean | false  |
+|  参数   | 说明               |                               类型                               | 默认值 |
+| :-----: | :----------------- | :--------------------------------------------------------------: | :----: |
+| active  | 是否展示动画效果   |                             Boolean                              | false  |
+| avatar  | 是否显示头像占位图 |                             Boolean                              | false  |
+| loading | 是否显示头像占位图 | [SkeletonParagraphProps](./Skeleton.html#skeletonparagraphprops) |   -    |
+|  title  | 是否显示标题占位图 |                             Boolean                              | false  |
+
+#### SkeletonParagraphProps
+
+| 参数  | 说明                                                                       |  类型  | 默认值 |
+| :---: | :------------------------------------------------------------------------- | :----: | :----: |
+| rows  | 设置段落占位图的行数                                                       | number |   -    |
+| width | 设置段落占位图的宽度，若为数组时则为对应的每行宽度，反之则是最后一行的宽度 | number | string | Array<number | string> | - |

@@ -9,8 +9,9 @@ const getHighlightCodeHtml = require('./highlight')
 module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
-
+  base: '/',
   markdown: {
+    anchor: { permalinkSymbol: '¶' },
     extendMarkdown: md => {
       // 使用更多的 markdown-it 插件!
       md.renderer.rules.table_open = function() {
@@ -64,12 +65,32 @@ module.exports = {
   themeConfig: {
     nav: [
       {
+        text: '指南',
+        link: '/guide/'
+      },
+      {
         text: '组件',
         link: '/组件/Button'
       }
     ],
     sidebarDepth: 2,
     sidebar: {
+      '/guide/': [
+        {
+          title: '指南', // 必要的
+          path: '/guide/', // 可选的, 应该是一个绝对路径
+          collapsable: false, // 可选的, 默认值是 true,
+          sidebarDepth: 1, // 可选的, 默认值是 1
+          children: ['/guide/', '/guide/1-getting-started', '/guide/2-dev-step']
+        },
+        {
+          title: '进阶', // 必要的
+          path: '/guide/', // 可选的, 应该是一个绝对路径
+          collapsable: false, // 可选的, 默认值是 true,
+          sidebarDepth: 1, // 可选的, 默认值是 1
+          children: ['/']
+        }
+      ],
       '/组件/': utils.genSidebar(
         '',
         fileHelper.getFileName(docs + '/组件/'),
